@@ -14,3 +14,5 @@ D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.csproj.GenerateR
 D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.csproj.CoreCompileInputs.cache
 D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.exe
 D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.pdb
+D:\WPF_Training\Registration_Login\obj\Debug\Welcome.g.cs
+D:\WPF_Training\Registration_Login\obj\Debug\Welcome.baml

@@ -6,31 +6,51 @@
         xmlns:local="clr-namespace:Registration_Login"
         mc:Ignorable="d"
         Title="Utthunga Technologies" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="28*"/>
-            <ColumnDefinition Width="765*"/>
-        </Grid.ColumnDefinitions>
-        <Label Content="First Namwe" HorizontalAlignment="Left" Margin="2.569,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.849,-0.683" Grid.Column="1"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="2.569,113,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Email Id" HorizontalAlignment="Left" Margin="9.569,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.521,-1.858" Grid.Column="1"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Confirm Password" HorizontalAlignment="Left" Margin="0,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.287,-3.792" Grid.Column="1"/>
-        <TextBox  Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="228,61,0,0" TextWrapping="Wrap" Text="Enter First Name" VerticalAlignment="Top" Width="120"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="228,113,0,0" TextWrapping="Wrap" Text="Enter LastName" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.327,0.592"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="228,172,0,0" TextWrapping="Wrap" Text="Email Id" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox Grid.Column="1" HorizontalAlignment="Left" Margin="228,214,0,0" VerticalAlignment="Top" Height="25" Width="120" />
-        <PasswordBox Grid.Column="1" HorizontalAlignment="Left" Margin="225,266,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5" Width="113">
-            <PasswordBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.295"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </PasswordBox.RenderTransform>
-        </PasswordBox>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="105,343,0,0" VerticalAlignment="Top" Width="75"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="411" VerticalAlignment="Top" Width="747" Grid.ColumnSpan="2" Margin="10,0,0,0"/>
+    <Grid  Height="350" Width="525" Background="Bisque">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,5,0,0" Name="textBlockHeading" Text="Registration:" VerticalAlignment="Top" Width="110"  FontSize="17" FontStretch="ExtraCondensed"/>
+        <!--Button as a Link button using style-->
+        <Button Margin="451,5,12,288" Content="Login" Cursor="Hand" Click="Login_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock TextDecorations="Underline">  
+                    <ContentPresenter />
+                    </TextBlock>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Foreground" Value="Navy" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <!--end Button as a Link button using style-->
+        <Grid Margin="31,0,29,23" Background="White" Height="264" VerticalAlignment="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="252*" />
+                <!--   <RowDefinition Height="12*" />-->
+            </Grid.RowDefinitions>
+            <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name ="errormessage" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,20,0,0" Name="textBlockFirstname" Text="First Name:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,50,0,0" Name="textBlockLastName" Text="Last Name:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,80,0,0" Name="textBlockEmailId" Text="EmailId" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,107,0,0" Name="textBlockPassword" Text="Password:" VerticalAlignment="Top" Width="110"  />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,136,0,0" Name="textBlockConfirmPwd" Text="ConfirmPassword:" VerticalAlignment="Top" Width="110" Grid.RowSpan="2" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="67,166,0,0" Name="textBlockAddress" Text="Address" VerticalAlignment="Top" Width="110" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,20,0,0" Name="textBoxFirstName" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,50,0,0" Name="textBoxLastName" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,80,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="222" />
+            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,107,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="222" />
+            <!--For password-->
+            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,136,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="183,0,0,66" Name="textBoxAddress" VerticalAlignment="Bottom" Width="222" />
+            <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
+            <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,204,0,0" Name="button2" VerticalAlignment="Top" Width="70" Click="button2_Click" />
+            <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0,204,60,0" Name="button3" VerticalAlignment="Top" Width="70" Click="button3_Click" />
+        </Grid>
     </Grid>
 </Window>
