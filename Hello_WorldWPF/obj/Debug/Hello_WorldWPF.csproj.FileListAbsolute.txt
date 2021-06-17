@@ -1,0 +1,15 @@
+D:\WPF_Training\Hello_WorldWPF\bin\Debug\Hello_WorldWPF.exe.config
+D:\WPF_Training\Hello_WorldWPF\bin\Debug\Hello_WorldWPF.exe
+D:\WPF_Training\Hello_WorldWPF\bin\Debug\Hello_WorldWPF.pdb
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.csprojAssemblyReference.cache
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_World.g.cs
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\App.g.cs
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF_MarkupCompile.cache
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF_MarkupCompile.lref
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_World.baml
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.g.resources
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.Properties.Resources.resources
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.csproj.GenerateResource.cache
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.csproj.CoreCompileInputs.cache
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.exe
+D:\WPF_Training\Hello_WorldWPF\obj\Debug\Hello_WorldWPF.pdb

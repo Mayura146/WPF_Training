@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Hello_WorldWPF
+namespace Registration_Login
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Registration_Page.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Registration_Page : Window
     {
-        public MainWindow()
+        public Registration_Page()
         {
             InitializeComponent();
         }

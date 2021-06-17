@@ -1,0 +1,16 @@
+D:\WPF_Training\Registration_Login\bin\Debug\Registration_Login.exe.config
+D:\WPF_Training\Registration_Login\bin\Debug\Registration_Login.exe
+D:\WPF_Training\Registration_Login\bin\Debug\Registration_Login.pdb
+D:\WPF_Training\Registration_Login\obj\Debug\Login_Page.g.cs
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Page.g.cs
+D:\WPF_Training\Registration_Login\obj\Debug\App.g.cs
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login_MarkupCompile.cache
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login_MarkupCompile.lref
+D:\WPF_Training\Registration_Login\obj\Debug\Login_Page.baml
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Page.baml
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.g.resources
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.Properties.Resources.resources
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.csproj.GenerateResource.cache
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.csproj.CoreCompileInputs.cache
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.exe
+D:\WPF_Training\Registration_Login\obj\Debug\Registration_Login.pdb

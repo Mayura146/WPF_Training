@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B614878D-7ADE-4E5E-9B05-09F3E48A09FB}</ProjectGuid>
+    <ProjectGuid>{47A37ADF-4B24-4F75-9524-257370DE1C68}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Hello_WorldWPF</RootNamespace>
-    <AssemblyName>Hello_WorldWPF</AssemblyName>
+    <RootNamespace>Registration_Login</RootNamespace>
+    <AssemblyName>Registration_Login</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,16 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Hello_World.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Hello_World.xaml.cs">
-      <DependentUpon>Hello_World.xaml</DependentUpon>
+    <Compile Include="Login_Page.xaml.cs">
+      <DependentUpon>Login_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Registration_Page.xaml.cs">
+      <DependentUpon>Registration_Page.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +91,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Login_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

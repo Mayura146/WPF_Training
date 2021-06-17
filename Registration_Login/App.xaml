@@ -1,8 +1,8 @@
-﻿<Application x:Class="Hello_WorldWPF.App"
+﻿<Application x:Class="Registration_Login.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Hello_WorldWPF"
-             StartupUri="Hello_World.xaml">
+             xmlns:local="clr-namespace:Registration_Login"
+             StartupUri="Registration_Page.xaml">
     <Application.Resources>
          
     </Application.Resources>
